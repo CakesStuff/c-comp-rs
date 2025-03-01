@@ -18,9 +18,7 @@ fn main() {
 
     assert!(cfiles.len() > 0);
 
-    for file in &cfiles {
-        println!("cargo:rerun-if-changed={}", file.display());
-    }
+    println!("cargo:rerun-if-changed=src/cproj/src");
 
     cc::Build::new()
         .include("src/cproj/include")
