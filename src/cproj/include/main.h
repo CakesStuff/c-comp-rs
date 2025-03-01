@@ -1,0 +1,1 @@
+#define EXAMPLE_RETURN_VALUE 42
